@@ -11,11 +11,9 @@ def test_greeting():
     # TODO Сформируйте нужную строку
     output = f"Привет, {name}! Тебе {age} лет."
     print(output)
-    output1 = "Привет, "+name+"! Тебе " + str(age) + " лет."
-    print(output1)
+
     # Проверяем результат
     assert output == "Привет, Анна! Тебе 25 лет."
-    assert output1 == "Привет, Анна! Тебе 25 лет."
 
 
 def test_rectangle():
@@ -26,12 +24,12 @@ def test_rectangle():
     a = 10
     b = 20
     # TODO сосчитайте периметр
-    perimeter = 2*(a+b)
+    perimeter = 2 * (a + b)
 
     assert perimeter == 60
 
     # TODO сосчитайте площадь
-    area = a*b
+    area = a * b
 
     assert area == 200
 
